@@ -74,8 +74,20 @@
     background-image: linear-gradient(to right, #FF8E63, #FF6B6B);
 }
 
+.colmn {
+    float: left;
+}
+
+.colmn1 {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
 .containers {
-    height: 50vh;
+    height: auto;
     border: 3px solid black;
     /* Set the container's height to 100% of viewport height */
 }
@@ -85,6 +97,6 @@
 }
 
 .contain {
-    height: 700px;
+    height: 500px;
     background-image: url('https://images.pexels.com/photos/1843716/pexels-photo-1843716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }

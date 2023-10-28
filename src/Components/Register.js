@@ -13,14 +13,17 @@ const Register = (props) => {
     return (
         
             <div className='container-fluid mt-3'>
-            <div className='container card decorate'>
-            <div className='row' >
-            <h3 className='text-danger  col-11 font-weight-bold fs-2'> Registeration Form : ~ </h3>
-            <button   className='col-1 btn-dark btn-text-primary button'><Link style={{color: "black"}} to='/Login'>Login</Link></button>
-            </div><br/>
+            <div className='container containers card decorate'>
+              <div >
+            <div className='colmn'>
+             <h3 className='text-danger font-weight-bold fs-2 '> Registeration Form : ~ </h3>
+           </div>
+           <div className='colmn1'>
+          <button   className=' button text-wrap'><Link style={{color: "black"}} to='/Login'>Login</Link></button>
+            </div></div><br/>
             <p className='text-center'>{props.message}</p>
-            <button className='btn btn-danger border border-black m-auto' onClick={props.google} style={{width : '50%'}}>Sign In With Google 🥸</button><br/>
-            <button className='btn btn-primary border border-primary m-auto' onClick={props.fb} style={{width : '50%'}}>Sign In With Facebook 🫠</button><br/>  
+            <button className='btn btn-danger border border-black m-auto' onClick={props.google} style={{width : '50%'}}>Sign In With Google 🇬</button><br/>
+            <button className='btn btn-primary border border-primary m-auto' onClick={props.fb} style={{width : '50%'}}>Sign In With Facebook ⓕ</button><br/>  
             <form onSubmit = {props.register}>
             <div className='form-group'>
             <label style={style} htmlFor='emailInput' className='text-dark font-weight-bold fs-5 fw-bolder'>Email :-&emsp;</label>
