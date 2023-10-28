@@ -1,4 +1,90 @@
-.center {
+.decorate {
+    background-image: url('https://images.pexels.com/photos/8749082/pexels-photo-8749082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    /* Add an overlay with some transparency */
+    /* Add any other background properties you want here */
+}
+
+.form-group input[type="text"] {
+    width: 60%;
+    /* Set the width to 100% */
+    padding: 8px;
+    /* Add padding for spacing */
+    font-size: 16px;
+    /* Adjust font size */
+    border: 2px solid #701313;
+    /* Add a border */
+    border-radius: 15px 50px;
+    /* Add rounded corners */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+    margin-bottom: 8px;
+    /* Add some space between fields */
+}
+
+
+/* Target the email and password fields */
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 90%;
+    /* Set the width to 100% */
+    padding: 8px;
+    /* Add padding for spacing */
+    font-size: 16px;
+    /* Adjust font size */
+    border: 2px solid #701313;
+    /* Add a border */
+    border-radius: 15px 50px;
+    /* Add rounded corners */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+    margin-bottom: 8px;
+    /* Add some space between fields */
+}
+
+
+/* Optional: Add some additional styles for better visual */
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #41180f;
+    /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+    /* Add a subtle shadow on focus */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c0b0b;
     text-align: center;
-    margin: 0;
+    text-decoration: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #FF6B6B, #FF8E63);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #FF8E63, #FF6B6B);
+}
+
+.containers {
+    height: 50vh;
+    border: 3px solid black;
+    /* Set the container's height to 100% of viewport height */
+}
+
+.adjust {
+    margin-top: 50px;
+}
+
+.contain {
+    height: 700px;
+    background-image: url('https://images.pexels.com/photos/1843716/pexels-photo-1843716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
