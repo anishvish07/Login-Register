@@ -132,7 +132,8 @@ class Container extends Component {
                 alert('Google login failed. Please try again.');
             });
     }
-    facebookHandler = () => {
+    facebookHandler = (e) => {
+        e.preventDefault();
         const provider = new FacebookAuthProvider();
         signInWithPopup(auth, provider)
             .then((result) => {

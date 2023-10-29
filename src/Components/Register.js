@@ -52,8 +52,8 @@ const Register = (props) => {
             <label className='text-warning text-dark font-weight-bold fs-5 fw-bolder' htmlFor='phoneInput'>Phone :- &emsp;</label>
             <input className='form-control' type='text' name='phone' id='phoneInput'/> 
             </div><br/>
-            <button type='submit '  className='text-black btn btn-danger'>Register</button>&emsp;
-            <input type='reset' className='text-danger btn btn-light'/>    
+            <button type='submit '  className='text-black btn btn-danger '>Register</button>&emsp;
+            <input type='reset' className='text-danger btn btn-light '/>    
             {props.message && <div>{props.message}</div>}  
             
             </form>
