@@ -24,10 +24,10 @@ const Register = (props) => {
       
        <div className='container-fluid mt-3 ad'>
     
-            <div className='container containers card decorate'>
+            <div className='container containers card decorate2'>
               <div >
             <div className='colmn'>
-             <h3 className='text-danger font-weight-bold fs-2 '> Registeration Form : ~ </h3>
+             <h3 className='text-danger font-weight-bold fs-2 animate__animated animate__tada'> Registeration Form : ~ </h3>
            </div>
            <div className='colmn1'>
           <button   className=' button text-wrap'><Link style={{color: "black"}} to='/Login'>Login</Link></button>
