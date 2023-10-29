@@ -89,11 +89,50 @@
 .containers {
     height: auto;
     border: 3px solid black;
+    z-index: 1;
     /* Set the container's height to 100% of viewport height */
 }
 
 .adjust {
     margin-top: 50px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+.ad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(0%, -120%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .ad {
+        transform: translate(0%, -110%);
+        /* Reset the transform for smaller screens */
+        position: relative;
+        /* Reset the position for smaller screens */
+        width: 100%;
+        /* Allow content to determine width */
+        height: 100%;
+        /* Allow content to determine height */
+    }
 }
 
 .contain {

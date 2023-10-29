@@ -1,5 +1,6 @@
 import React, { cloneElement } from 'react';
 import './Register.css';
+import 'animate.css';
 import { BrowserRouter as Router, Switch , Link ,Route } from 'react-router-dom';
 
 const Register = (props) => {
@@ -10,9 +11,19 @@ const Register = (props) => {
 
 
     }
+    
+               
+                      
+
+    
     return (
+           <div className='background-video' >
         
-            <div className='container-fluid mt-3'>
+         <video autoPlay playsInline muted loop src={'video (1080p) (1).mp4'} type="video/mp4"/>
+         
+      
+       <div className='container-fluid mt-3 ad'>
+    
             <div className='container containers card decorate'>
               <div >
             <div className='colmn'>
@@ -21,7 +32,7 @@ const Register = (props) => {
            <div className='colmn1'>
           <button   className=' button text-wrap'><Link style={{color: "black"}} to='/Login'>Login</Link></button>
             </div></div><br/>
-            <p className='text-center'>{props.message}</p>
+            <p className='text-center text-danger animate__animated animate__fadeIn'>{props.message}</p>
             <button className='btn btn-danger border border-black m-auto' onClick={props.google} style={{width : '50%'}}>Sign In With Google 🇬</button><br/>
             <button className='btn btn-primary border border-primary m-auto' onClick={props.fb} style={{width : '50%'}}>Sign In With Facebook ⓕ</button><br/>  
             <form onSubmit = {props.register}>
@@ -54,11 +65,15 @@ const Register = (props) => {
             </div><br/>
             <button type='submit '  className='text-black btn btn-danger '>Register</button>&emsp;
             <input type='reset' className='text-danger btn btn-light '/>    
-            {props.message && <div>{props.message}</div>}  
+            <h5 style={{
+              color : "red"
+            }}>{<div>{props.message}</div>} </h5>
             
             </form>
             </div>
+           </div>
             </div>
+            
            
         
     );
