@@ -160,14 +160,10 @@ video {
 
 @media (max-width: 572px) {
     .small-card {
-        max-width: 90%;
+        max-width: 95%;
         max-height: 90%;
         overflow: scroll;
         /* Prevent text overflow */
-        white-space: nowrap;
-        /* Prevent wrapping */
-        text-overflow: ellipsis;
-        /* Override max-width for small screens (phones) */
     }
 }
 
