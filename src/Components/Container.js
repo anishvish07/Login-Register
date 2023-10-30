@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Register from './Register';
 import Login from './Login';
+import Modal from './modal';
+import './modal.css';
 import { v4 as uuidv4 } from 'uuid';
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, set } from "firebase/database";
@@ -26,6 +28,7 @@ class Container extends Component {
 
         this.state = {
             id:uuidv4(),
+            isModalOpen: false,
             email: null,
             password: null,
             isSubmitted: false,
@@ -34,6 +37,14 @@ class Container extends Component {
             phone: null,
             confirmpassword :null,
         }
+    }
+    
+    openModal = () => {
+        this.setState({ isModalOpen: true });
+    }
+
+    closeModal = () => {
+        this.setState({ isModalOpen: false });
     }
 
     submitHandler = (event) => {
@@ -51,9 +62,11 @@ class Container extends Component {
             firstName,
             lastName,
             phone,
+            isModalOpen : true,
             confirmpassword,
             isSubmitted: true
         },()=>{
+            this.openModal();
             const userData = {
             email,
             password,
@@ -166,7 +179,7 @@ class Container extends Component {
     }
     
    render() {
-        const { email, password, lastName, firstName, phone, confirmpassword ,isSubmitted } = this.state;
+        const {  isModalOpen, email,password, lastName, firstName, phone, confirmpassword ,isSubmitted } = this.state;
         return(
       <Router>
             <div>
@@ -185,6 +198,14 @@ class Container extends Component {
                     />
                 </Routes>
             </div>
+             <Modal isOpen={isModalOpen} onClose={this.closeModal}>
+                    {isSubmitted && (
+                        <>
+                            <h2>Form Submitted!</h2>
+                            <p>Your form has been successfully submitted.</p>
+                        </>
+                    )}
+                </Modal>
         </Router>
         )
        
