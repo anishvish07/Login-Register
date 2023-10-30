@@ -1,5 +1,5 @@
 .decorate {
-    background-image: url('https://images.pexels.com/photos/2395249/pexels-photo-2395249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/3219954/pexels-photo-3219954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
     /* Add an overlay with some transparency */
@@ -7,7 +7,7 @@
 }
 
 .decorate2 {
-    background-image: url('https://images.pexels.com/photos/9668274/pexels-photo-9668274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/7130482/pexels-photo-7130482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
 }
@@ -117,10 +117,10 @@ video {
     object-fit: cover;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 450px) {
     video {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         object-fit: cover;
     }
 }
@@ -152,15 +152,15 @@ video {
     /* Send the video to the background */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .ad {
         transform: none;
         /* Reset the transform for smaller screens */
-        position: relative;
+        position: absolute;
         /* Reset the position for smaller screens */
-        width: 100%;
+        width: 90%;
         /* Allow content to determine width */
-        height: 100%;
+        height: 90%;
         /* Allow content to determine height */
     }
 }
