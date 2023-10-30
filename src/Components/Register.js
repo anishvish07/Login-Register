@@ -24,7 +24,7 @@ const Register = (props) => {
       
        <div className='container-fluid mt-3 ad'>
     
-            <div className='container containers card decorate2'>
+            <div className='container containers card  small-card decorate2'>
               <div >
             <div className='colmn'>
              <h3 className='text-danger font-weight-bold fs-2 animate__animated animate__tada'> Registeration Form : ~ </h3>

@@ -9,7 +9,7 @@ const Login = (props) => {
         
             <div className='container-fluid mt-3  '>
             <div className='adjust'>
-            <div className='container con card decorate'>
+            <div className='container con small-card card decorate'>
             <div >
             <div className='colmn'>
             <h3 className='text-danger mp-3 fst-italic animate__animated animate__tada ' > Login Credential :~ </h3>
