@@ -12,8 +12,8 @@ const Login = (props) => {
             <div className='container con small-card card decorate'>
             <div >
             <div className='colmn'>
-            <h3 className=' text-white mp-3 fst-italic animate__animated animate__tada ' > Login Credential :~ </h3>
-           </div>
+            <h3 className='text-white mp-3  h1 fst-italic animate__animated animate__tada txt' > Login Credential :~ </h3>
+           </div><br/>
            <div className='colmn1'>
            <button type="button" className=' button text-wrap'  ><Link style={{color: "black"}} to='/Register'>Register</Link></button>
             </div></div>
@@ -27,9 +27,25 @@ const Login = (props) => {
             <label className='text-white fw-bolder fs-5' htmlFor='passInput'>Password:- &emsp;</label>
             <input className='form-control' type='password' name='pass' id='passInput'/> 
             </div><br/><br/>
+            <div>
             <button type='submit ' className='text-black btn btn-danger button'>Login</button>&emsp;
             <input type='reset' className='text-danger btn btn-light'/>      
-            
+            <h3 className='foot'>
+                          <span>C</span>
+  <span>o</span>
+  <span>d</span>
+  <span>e</span>
+  <span>B</span>
+  <span>y</span>
+  <span>~</span>
+  <span>@</span>
+  <span>n</span>
+  <span>i</span>
+  <span>s</span>
+  <span>h</span> 
+            </h3>
+
+            </div>
             </form>
             </div>
             </div>

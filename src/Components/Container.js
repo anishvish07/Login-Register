@@ -188,18 +188,18 @@ class Container extends Component {
                 </Routes>
             </div>
              <Modal isOpen={isModalOpen} onClose={this.closeModal}>
-                    {isSubmitted && (
+                    {   isSubmitted && (
                         <>
-                            <h2>Form Submitted!</h2>
+                            <h2>Form Submitted! ☑️</h2>
                             <p>Your form has been successfully submitted.</p>
                         </>
                     )}
 
                 </Modal>
                <PopUp isOpen={isPopUpOpen} onClose={this.closePop}>
-                  {isPopUpOpen && (
+                  { isPopUpOpen && (
                    <>
-            <h2>Login Successfully!</h2>
+            <h2>Login Successfully! ☑️</h2>
             <p>Your form has been successfully logged In.</p>
                  </>
                 )}

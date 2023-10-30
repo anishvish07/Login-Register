@@ -143,6 +143,13 @@
     }
 }
 
+.foot {
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: #FFFBF5;
+}
+
 video {
     width: 100%;
     height: 100%;
@@ -204,6 +211,56 @@ video {
         height: 100%;
         /* Allow content to determine height */
     }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: rgb(0, 225, 255);
+    }
+}
+
+.foot span {
+    display: inline-block;
+    animation: bounce 1s infinite alternate;
+    animation-delay: calc(0.1s * var(--i));
+    animation-fill-mode: forwards;
+    /* This keeps the last frame of the animation */
+}
+
+.foot span:nth-child(1) {
+    --i: 1;
+    animation: bounce 1s infinite alternate, colorChange 2s infinite alternate;
+}
+
+.foot span:nth-child(2) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(7) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(8) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
 }
 
 .contain {

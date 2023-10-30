@@ -65,7 +65,7 @@ const Register = (props) => {
             <input className='form-control' type='text' name='phone' id='phoneInput'/> 
             </div><br/>
             <button type='submit '  className='text-black btn-lg btn-sm btn-danger '>Register</button>&emsp;
-            <input type='reset' className='text-danger btn-lg btn-sm btn-light '/>    
+            <input type='reset' className='text-danger btn-lg btn-sm btn-dark '/>    
             <h5 style={{
               color : "red"
             }}>{<div>{props.message}</div>} </h5>
