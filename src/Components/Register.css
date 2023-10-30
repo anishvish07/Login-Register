@@ -26,6 +26,12 @@
     transition: background-position .7s, background-size .5s ease-in-out;
 }
 
+@media (max-width: 402px) {
+    .txt {
+        font-size: 2em;
+    }
+}
+
 .decorate2 {
     background-image: url('https://images.pexels.com/photos/8357153/pexels-photo-8357153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
@@ -178,6 +184,21 @@ video {
     /* Make sure the register form is on top */
 }
 
+.foots {
+    margin-top: 80px;
+    color: #FCE09B;
+    font-family: cursive;
+    opacity: 0.8;
+}
+
+@media (max-width: 402px) {
+    .foots {
+        margin-top: 40px;
+        font-size: x-small;
+        opacity: 0.8;
+    }
+}
+
 .background-video {
     position: absolute;
     top: 0;
@@ -225,13 +246,19 @@ video {
 
 @keyframes colorChange {
     0% {
-        color: red;
+        color: rgb(255, 0, 247);
     }
     50% {
-        color: blue;
+        color: rgb(0, 255, 149);
     }
     100% {
         color: rgb(0, 225, 255);
+    }
+}
+
+@media (max-width: 402px) {
+    .foot {
+        font-size: medium;
     }
 }
 

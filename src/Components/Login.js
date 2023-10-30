@@ -12,7 +12,7 @@ const Login = (props) => {
             <div className='container con small-card card decorate'>
             <div >
             <div className='colmn'>
-            <h3 className='text-white mp-3  h1 fst-italic animate__animated animate__tada txt' > Login Credential :~ </h3>
+            <h3 className='text-white mp-3 fs-2 fst-italic animate__animated animate__tada txt' > Login Credential :~ </h3>
            </div><br/>
            <div className='colmn1'>
            <button type="button" className=' button text-wrap'  ><Link style={{color: "black"}} to='/Register'>Register</Link></button>
@@ -49,7 +49,9 @@ const Login = (props) => {
             </form>
             </div>
             </div>
+            
             </div>
+            <h1 className='text-center text-block  fs-3 foots'>React Based Application</h1>
         </div>
     );
 }
