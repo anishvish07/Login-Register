@@ -12,17 +12,17 @@ const Login = (props) => {
             <div className='container con small-card card decorate'>
             <div >
             <div className='colmn'>
-            <h3 className='text-danger mp-3 fst-italic animate__animated animate__tada ' > Login Credential :~ </h3>
+            <h3 className=' mp-3 fst-italic animate__animated animate__tada ' > Login Credential :~ </h3>
            </div>
            <div className='colmn1'>
            <button type="button" className=' button text-wrap'  ><Link style={{color: "black"}} to='/Register'>Register</Link></button>
-            </div></div><br/>
+            </div></div>
             
             <form onSubmit={props.handle}>
             <div className='form-group'>
             <label htmlFor='emailInput' className='text-dark font-weight-bold fs-5 fw-bolder'>Email :-&emsp;</label>
             <input className='form-control' type='email' name='email' id='emailInput'/> 
-            </div><br/>
+            </div>
              <div className='form-group'>
             <label className='text-dark fw-bolder fs-5' htmlFor='passInput'>Password:- &emsp;</label>
             <input className='form-control' type='password' name='pass' id='passInput'/> 

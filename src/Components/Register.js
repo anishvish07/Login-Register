@@ -1,6 +1,7 @@
 import React, { cloneElement } from 'react';
 import './Register.css';
 import 'animate.css';
+
 import { BrowserRouter as Router, Switch , Link ,Route } from 'react-router-dom';
 
 const Register = (props) => {
@@ -27,11 +28,11 @@ const Register = (props) => {
             <div className='container containers card  small-card decorate2'>
               <div >
             <div className='colmn'>
-             <h3 className='text-danger font-weight-bold fs-2 animate__animated animate__tada'> Registeration Form : ~ </h3>
+             <p className=' font-weight-bold fs-1 animate__animated animate__tada txt'> Registeration Form : ~ </p>
            </div>
            <div className='colmn1'>
           <button   className=' button text-wrap'><Link style={{color: "black"}} to='/Login'>Login</Link></button>
-            </div></div><br/>
+            </div></div>
             <p className='text-center text-danger animate__animated animate__fadeIn'>{props.message}</p>
             <button className='btn btn-danger border border-black m-auto' onClick={props.google} style={{width : '50%'}}>Sign In With Google 🇬</button><br/>
             <button className='btn btn-primary border border-primary m-auto' onClick={props.fb} style={{width : '50%'}}>Sign In With Facebook ⓕ</button><br/>  
@@ -39,7 +40,7 @@ const Register = (props) => {
             <div className='form-group'>
             <label style={style} htmlFor='emailInput' className='text-dark font-weight-bold fs-5 fw-bolder'>Email :-&emsp;</label>
             <input className='form-control' type='email' name='email' id='emailInput'/> 
-            </div><br/>
+            </div>
             <div className='row'>
             <div className='form-group col' style={{borderRadius : '15px 50px'}}>
             <label className='text-primary text-dark font-weight-bold fs-5 fw-bolder' htmlFor='firstNameInput' > First Name:- &emsp;</label>
@@ -54,17 +55,17 @@ const Register = (props) => {
              <div className='form-group'>
             <label className='text-success text-dark font-weight-bold fs-5 fw-bolder' htmlFor='passInput'>Password:- &emsp;</label>
             <input className='form-control' type='password' name='pass' id='passInput'/> 
-            </div><br/>
+            </div>
              <div className='form-group'>
             <label className='text-danger text-dark font-weight-bold fs-5 fw-bolder' htmlFor='passInput1'> Confirm Password:- &emsp;</label>
             <input className='form-control' type='password' name='confirm' id='passInput1'/> 
-            </div><br/>
+            </div>
             <div className='form-group'>
             <label className='text-warning text-dark font-weight-bold fs-5 fw-bolder' htmlFor='phoneInput'>Phone :- &emsp;</label>
             <input className='form-control' type='text' name='phone' id='phoneInput'/> 
             </div><br/>
-            <button type='submit '  className='text-black btn btn-danger '>Register</button>&emsp;
-            <input type='reset' className='text-danger btn btn-light '/>    
+            <button type='submit '  className='text-black btn-lg btn-sm btn-danger '>Register</button>&emsp;
+            <input type='reset' className='text-danger btn-lg btn-sm btn-light '/>    
             <h5 style={{
               color : "red"
             }}>{<div>{props.message}</div>} </h5>

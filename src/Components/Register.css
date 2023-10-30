@@ -6,8 +6,28 @@
     /* Add any other background properties you want here */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.txt {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(#FCF5ED, #1F4172);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    color: #001524;
+    transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+.txt:hover {
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+}
+
 .decorate2 {
-    background-image: url('https://images.pexels.com/photos/7130482/pexels-photo-7130482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/8357153/pexels-photo-8357153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
 }
@@ -107,8 +127,14 @@
     /* Set the container's height to 100% of viewport height */
 }
 
+@media (max-width :402px) {
+    .txt {
+        font-size: x-small;
+    }
+}
+
 .adjust {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 @media (max-width: 572px) {
