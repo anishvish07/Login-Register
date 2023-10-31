@@ -23,7 +23,7 @@ const Register = (props) => {
          <video autoPlay playsInline muted loop src={'video (1080p) (1).mp4'} type="video/mp4"/>
          
       
-       <div className='container-fluid mt-3 ad'>
+       <div className='container-fluid  ad'>
     
             <div className='container containers card  small-card decorate2'>
               <div >
