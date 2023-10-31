@@ -12,34 +12,20 @@ const Register = (props) => {
 
 
     }
-      useEffect(() => {
-        const video = document.querySelector('.background-video');
-        video.playbackRate = 2; // Adjust the playback speed as needed
-    }, []);
-               
+ 
                       
 
     
     return (
-           <div className='background-video' >
         
-         <video autoPlay playsInline muted loop src={'vid.mp4'} type="video/mp4"/>
          
       
-       <div className='container-fluid  ad'>
+       <div className='container-fluid  ad decorate2'>
     
-            <div className='container containers card  small-card'>
-             <div className='background-video1' >
-             
-        
-         <video autoPlay playsInline muted loop src={'vid.mp4'} type="video/mp4"/>
-         
-              
-             
+            <div className='container containers card  small-card decorate2'> 
+             <div>
             
-           {/* <div className='colmn1'>
-          
-            </div> */}</div>
+           </div>
             <div className='decorate2'>
              <p className=' font-weight-bold fs-1 animate__animated animate__tada txt colmn'> Registeration Form : ~ </p>
              <button   className=' colmn1 button text-wrap'><Link style={{color: "black"}} to='/Login'>Login</Link></button>
@@ -74,7 +60,7 @@ const Register = (props) => {
             <div className='form-group'>
             <label className='text-warning text-dark font-weight-bold fs-5 fw-bolder' htmlFor='phoneInput'>Phone :- &emsp;</label>
             <input className='form-control' type='text' name='phone' id='phoneInput'/> 
-            </div><br/>
+            </div><br/><div></div>
             <button type='submit ' className='text-dark btn-lg btn-sm btn-danger fs-5 '>Register</button>&emsp;
             <input type='reset' className='text-danger btn-lg btn-sm btn-dark fs-6'/>    
             <h5 style={{
@@ -82,25 +68,26 @@ const Register = (props) => {
             }}>{<div>{props.message}</div>} </h5>
 
             </form>
+                
             </div>
-                                       <h3 className='foot '>
+<h3 className='foot '>
                           <span>C</span>
-  <span>o</span>
-  <span>d</span>
-  <span>e</span>
-  <span>B</span>
-  <span>y</span>
-  <span>~</span>
-  <span>@</span>
-  <span>n</span>
-  <span>i</span>
-  <span>s</span>
-  <span>h</span> 
-            </h3>
+                          <span>o</span>
+                          <span>d</span>
+                          <span>e</span>
+                          <span>B</span>
+                          <span>y</span>
+                          <span>~</span>
+                          <span>@</span>
+                          <span>n</span>
+                          <span>i</span>
+                          <span>s</span>
+                          <span>h</span> 
+                                         </h3>
            </div>
 
            
-           </div>
+           
             
             
            

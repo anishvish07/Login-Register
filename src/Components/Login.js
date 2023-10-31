@@ -7,7 +7,7 @@ const Login = (props) => {
     return (
         <div className='contain ' >
         
-            <div className='container-fluid mt-3  '>
+            <div className='container-fluid mt-3 '>
             <div className='adjust'>
             <div className='container con small-card card decorate'>
             <div >
@@ -30,7 +30,7 @@ const Login = (props) => {
             <div>
             <button type='submit ' className='text-black btn btn-danger button'>Login</button>&emsp;
             <input type='reset' className='text-danger btn btn-light'/>      
-            <h3 className='foot1'>
+            <h3 className='foot'>
                           <span>C</span>
   <span>o</span>
   <span>d</span>
