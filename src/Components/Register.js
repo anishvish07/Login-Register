@@ -44,7 +44,7 @@ const Register = (props) => {
             <input className='form-control' type='text' name='firstName' id='firstNameInput'  required/> 
             </div>
             <div className='form-group col'>
-            <label className='text-dander text-dark font-weight-bold fs-5 fw-bolder' htmlFor='lastNameInput'> Last Name:- &emsp;</label>
+            <label className='last font-weight-bold fs-5 fw-bolder' htmlFor='lastNameInput'> Last Name:- &emsp;</label>
             <input className='form-control' type='text' name='lastName' id='lastNameInput' required/> 
             </div>
             </div>

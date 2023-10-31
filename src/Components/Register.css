@@ -203,7 +203,7 @@
 
 .glow {
     box-shadow: 10px 10px rgba(228, 67, 8, 1);
-    color: rgb(195, 16, 135);
+    color: rgb(9, 9, 9);
     animation: glowAnimation 10s infinite alternate;
 }
 
@@ -260,12 +260,9 @@
     0% {
         color: rgb(255, 111, 0);
     }
-    /* 50% {
-        color: rgb(17, 228, 56);
+    50% {
+        color: rgb(228, 59, 17);
     }
-    75% {
-        color: rgb(188, 22, 180);
-    } */
     100% {
         color: rgb(230, 222, 222);
     }
@@ -374,8 +371,6 @@
     }
 }
 
-.up {
-    z-index: 1;
-    height: 100%;
-    width: 100%;
+.last {
+    color: rgb(210, 187, 187);
 }
