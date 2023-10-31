@@ -23,7 +23,7 @@ const Register = (props) => {
     return (
            <div className='background-video' >
         
-         <video autoPlay playsInline muted loop src={'video.mp4'} type="video/mp4"/>
+         <video autoPlay playsInline muted loop src={'vid.mp4'} type="video/mp4"/>
          
       
        <div className='container-fluid  ad'>
@@ -32,7 +32,7 @@ const Register = (props) => {
              <div className='background-video1' >
              
         
-         <video autoPlay playsInline muted loop src={'video.mp4'} type="video/mp4"/>
+         <video autoPlay playsInline muted loop src={'vid.mp4'} type="video/mp4"/>
          
               
              
