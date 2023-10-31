@@ -21,7 +21,7 @@ const Login = (props) => {
             <form onSubmit={props.handle}>
             <div className='form-group'>
             <label htmlFor='emailInput' className='text-white font-weight-bold fs-5 fw-bolder'>Email :-&emsp;</label>
-            <input className='form-control' type='email' name='email' id='emailInput'/> 
+            <input className='form-control' type='email' name='email' id='emailInput' placeholder='ex-anish@gmail.com'/> 
             </div>
              <div className='form-group'>
             <label className='text-white fw-bolder fs-5' htmlFor='passInput'>Password:- &emsp;</label>
@@ -51,7 +51,8 @@ const Login = (props) => {
             </div>
             
             </div>
-            <h1 className='text-center text-block  fs-3 foots'>React Based Application</h1>
+            <h1 className='text-center fs-3 foots'>New User - <Link className='text-danger' to ='/Register'>Register</Link> </h1>
+            
         </div>
     );
 }

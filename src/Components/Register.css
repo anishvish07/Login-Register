@@ -33,9 +33,10 @@
 }
 
 .decorate2 {
-    background-image: url('https://images.pexels.com/photos/8357153/pexels-photo-8357153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /* background-image: url('https://images.pexels.com/photos/8357153/pexels-photo-8357153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    position: relative;
 }
 
 .form-group input[type="text"] {
@@ -54,9 +55,6 @@
     margin-bottom: 8px;
     /* Add some space between fields */
 }
-
-
-/* Target the email and password fields */
 
 .form-group input[type="email"],
 .form-group input[type="password"] {
@@ -151,8 +149,7 @@
 
 .foot {
     float: right;
-    margin-right: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
     color: #FFFBF5;
 }
 
@@ -168,6 +165,32 @@ video {
         height: 100%;
         object-fit: cover;
     }
+}
+
+.google-like-emoji {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #8d0303;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 10px 14px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+.fb-like-emoji {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #1854e0;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 10px 14px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
 }
 
 .ad {
@@ -186,9 +209,10 @@ video {
 
 .foots {
     margin-top: 80px;
-    color: #FCE09B;
-    font-family: cursive;
-    opacity: 0.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.9;
+    color: white;
+    font-weight: bolder;
 }
 
 @media (max-width: 402px) {
@@ -203,7 +227,6 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -212,7 +235,26 @@ video {
     /* Send the video to the background */
 }
 
-@media (max-width: 572px) {
+.background-video1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the video covers the entire container */
+    z-index: -1;
+    /* Send the video to the background */
+}
+
+@media (max-width :402px) {
+    .background-video1 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
     .small-card {
         max-width: 95%;
         max-height: 90%;
@@ -221,7 +263,7 @@ video {
     }
 }
 
-@media (max-width: 572px) {
+@media (max-width: 402px) {
     .ad {
         transform: none;
         /* Reset the transform for smaller screens */
@@ -246,13 +288,16 @@ video {
 
 @keyframes colorChange {
     0% {
-        color: rgb(255, 0, 247);
+        color: rgb(255, 111, 0);
     }
-    50% {
-        color: rgb(0, 255, 149);
+    /* 50% {
+        color: rgb(17, 228, 56);
     }
+    75% {
+        color: rgb(188, 22, 180);
+    } */
     100% {
-        color: rgb(0, 225, 255);
+        color: rgb(16, 14, 14);
     }
 }
 
@@ -280,12 +325,37 @@ video {
     animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
 }
 
-.foot span:nth-child(7) {
+.foot span:nth-child(5) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(6) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(12) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(13) {
     --i: 2;
     animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
 }
 
 .foot span:nth-child(8) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(9) {
+    --i: 2;
+    animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(10) {
     --i: 2;
     animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
 }
