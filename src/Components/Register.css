@@ -26,7 +26,7 @@
     transition: background-position .7s, background-size .5s ease-in-out;
 }
 
-@media (max-width: 402px) {
+@media (max-width: 572px) {
     .txt {
         font-size: 2em;
     }
@@ -131,7 +131,7 @@
     /* Set the container's height to 100% of viewport height */
 }
 
-@media (max-width :402px) {
+@media (max-width :572px) {
     .txt {
         font-size: x-small;
     }
@@ -141,7 +141,7 @@
     margin-top: 80px;
 }
 
-@media (max-width: 402px) {
+@media (max-width: 572px) {
     .adjust {
         margin-top: 50px;
     }
@@ -159,7 +159,7 @@ video {
     object-fit: cover;
 }
 
-@media (max-width: 402px) {
+@media (max-width: 572px) {
     video {
         width: 100%;
         height: 100%;
@@ -230,7 +230,7 @@ video {
     }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 572px) {
     .foots {
         margin-top: 40px;
         font-size: x-small;
@@ -258,7 +258,7 @@ video {
     z-index: -1;
 }
 
-@media (max-width :402px) {
+@media (max-width :572px) {
     .background-video1 {
         width: 100%;
         height: 100%;
@@ -274,7 +274,7 @@ video {
     }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 572px) {
     .ad {
         transform: none;
         /* Reset the transform for smaller screens */
@@ -284,6 +284,31 @@ video {
         /* Allow content to determine width */
         height: 100%;
         /* Allow content to determine height */
+    }
+}
+
+@keyframes bounces {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes colorChanges {
+    0% {
+        color: rgb(255, 111, 0);
+    }
+    /* 50% {
+        color: rgb(17, 228, 56);
+    }
+    75% {
+        color: rgb(188, 22, 180);
+    } */
+    100% {
+        color: rgb(236, 231, 231);
     }
 }
 
@@ -312,10 +337,83 @@ video {
     }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 572px) {
     .foot {
         font-size: medium;
     }
+}
+
+.foot1 span {
+    display: inline-block;
+    animation: bounce 1s infinite alternate;
+    animation-delay: calc(0.1s * var(--i));
+    animation-fill-mode: forwards;
+    /* This keeps the last frame of the animation */
+}
+
+.foot1 span:nth-child(1) {
+    --i: 1;
+    animation: bounces 1s infinite alternate, colorChanges 2s infinite alternate;
+}
+
+.foot1 span:nth-child(3) {
+    --i: 1;
+    animation: bounces 1s infinite alternate, colorChanges 2s infinite alternate;
+}
+
+.foot1 span:nth-child(2) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
+}
+
+.foot1 span:nth-child(7) {
+    --i: 1;
+    animation: bounces 1s infinite alternate, colorChanges 2s infinite alternate;
+}
+
+.foot1 span:nth-child(4) {
+    --i: 1;
+    animation: bounces 1s infinite alternate, colorChanges 2s infinite alternate;
+}
+
+.foot1 span:nth-child(5) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
+}
+
+.foot1 span:nth-child(6) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
+}
+
+.foot1 span:nth-child(11) {
+    --i: 1;
+    animation: bounces 1s infinite alternate, colorChanges 2s infinite alternate;
+}
+
+.foot1 span:nth-child(12) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
+}
+
+.foot1 span:nth-child(13) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
+}
+
+.foot1 span:nth-child(8) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
+}
+
+.foot1 span:nth-child(9) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
+}
+
+.foot1 span:nth-child(10) {
+    --i: 2;
+    animation: bounces 1s infinite alternate 0.1s, colorChanges 2s infinite alternate 1s;
 }
 
 .foot span {
@@ -331,9 +429,24 @@ video {
     animation: bounce 1s infinite alternate, colorChange 2s infinite alternate;
 }
 
+.foot span:nth-child(3) {
+    --i: 1;
+    animation: bounce 1s infinite alternate, colorChange 2s infinite alternate;
+}
+
 .foot span:nth-child(2) {
     --i: 2;
     animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(7) {
+    --i: 1;
+    animation: bounce 1s infinite alternate, colorChange 2s infinite alternate;
+}
+
+.foot span:nth-child(4) {
+    --i: 1;
+    animation: bounce 1s infinite alternate, colorChange 2s infinite alternate;
 }
 
 .foot span:nth-child(5) {
@@ -344,6 +457,11 @@ video {
 .foot span:nth-child(6) {
     --i: 2;
     animation: bounce 1s infinite alternate 0.1s, colorChange 2s infinite alternate 1s;
+}
+
+.foot span:nth-child(11) {
+    --i: 1;
+    animation: bounce 1s infinite alternate, colorChange 2s infinite alternate;
 }
 
 .foot span:nth-child(12) {

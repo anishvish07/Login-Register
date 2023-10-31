@@ -30,7 +30,7 @@ const Login = (props) => {
             <div>
             <button type='submit ' className='text-black btn btn-danger button'>Login</button>&emsp;
             <input type='reset' className='text-danger btn btn-light'/>      
-            <h3 className='foot'>
+            <h3 className='foot1'>
                           <span>C</span>
   <span>o</span>
   <span>d</span>

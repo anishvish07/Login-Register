@@ -1,4 +1,4 @@
-import React, { cloneElement } from 'react';
+import React, { cloneElement ,useEffect } from 'react';
 import './Register.css';
 import 'animate.css';
 
@@ -12,7 +12,10 @@ const Register = (props) => {
 
 
     }
-    
+      useEffect(() => {
+        const video = document.querySelector('.background-video');
+        video.playbackRate = 2; // Adjust the playback speed as needed
+    }, []);
                
                       
 
@@ -20,7 +23,7 @@ const Register = (props) => {
     return (
            <div className='background-video' >
         
-         <video autoPlay playsInline muted loop src={'video (1080p) (1).mp4'} type="video/mp4"/>
+         <video autoPlay playsInline muted loop src={'video (1080p) (1) (2).mp4'} type="video/mp4"/>
          
       
        <div className='container-fluid  ad'>
@@ -29,7 +32,7 @@ const Register = (props) => {
              <div className='background-video1' >
              
         
-         <video autoPlay playsInline muted loop src={'video (1080p) (1).mp4'} type="video/mp4"/>
+         <video autoPlay playsInline muted loop src={'video (1080p) (1) (2).mp4'} type="video/mp4"/>
          
               
              
