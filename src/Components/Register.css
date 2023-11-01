@@ -67,13 +67,13 @@
 .form-group input[type="text"]:valid,
 .form-group input[type="email"]:valid,
 .form-group input[type="password"]:valid {
-    color: rgb(234, 52, 25);
+    color: rgb(179, 237, 199);
 }
 
 .form-group input[type="text"]:invalid,
 .form-group input[type="email"]:invalid,
 .form-group input[type="password"]:invalid {
-    color: rgb(223, 243, 164);
+    color: rgb(234, 52, 25);
 }
 
 .button {
