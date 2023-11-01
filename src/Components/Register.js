@@ -9,8 +9,6 @@ const Register = (props) => {
        color : 'violet',
        fontWeight : '2px',
        textAlign : 'left',
-
-
     }
  
     return (

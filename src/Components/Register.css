@@ -10,11 +10,11 @@
     font-size: 5;
     position: absolute;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(#FCF5ED, #1F4172);
+    background-image: linear-gradient(#fcfcfb, #1554ac);
     background-size: 100% 10px;
     background-repeat: no-repeat;
     background-position: 100% 0%;
-    color: #d6dce0;
+    color: #fafdff;
     transition: background-size .7s, background-position .5s ease-in-out;
 }
 
