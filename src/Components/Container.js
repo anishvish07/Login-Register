@@ -10,7 +10,6 @@ import { getDatabase, ref, set } from "firebase/database";
 import { BrowserRouter as Router ,Routes,Navigate ,Route } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword ,GoogleAuthProvider ,FacebookAuthProvider, signInWithPopup} from 'firebase/auth';
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -23,7 +22,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-const auth = getAuth(); // Initialize Firebase authentication
+const auth = getAuth(); 
 class Container extends Component {
     constructor (props){
         super(props);
@@ -141,7 +140,6 @@ class Container extends Component {
             .then((result) => {
                 const user = result.user;
                 alert('Google login successful!');
-                // Proceed with any other actions you want to take after successful login
             })
             .catch((error) => {
                 console.error('Error logging in with Google:', error);

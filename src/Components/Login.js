@@ -10,7 +10,7 @@ const Login = (props) => {
             <div className='container-fluid mt-3 '>
             <div className='adjust'>
             <div className='container con small-card card decorate'>
-            <div >
+            <div>
             <div className='colmn'>
             <h3 className='text-white mp-3 fs-2 fst-italic animate__animated animate__tada txt' > Login Credential :~ </h3>
            </div><br/>

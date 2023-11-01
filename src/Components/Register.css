@@ -2,8 +2,6 @@
     background-image: url('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
-    /* Add an overlay with some transparency */
-    /* Add any other background properties you want here */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -42,7 +40,7 @@
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="password"] {
-    width: 50%;
+    width: 60%;
     padding: 10px;
     font-size: 16px;
     border: none;
@@ -121,7 +119,6 @@
     padding-top: 15px;
     border: 3px solid black;
     z-index: 1;
-    /* Set the container's height to 100% of viewport height */
 }
 
 @media (max-width :402px) {
@@ -254,7 +251,7 @@
         color: rgb(255, 111, 0);
     }
     50% {
-        color: rgb(228, 59, 17);
+        color: rgb(17, 182, 228);
     }
     100% {
         color: rgb(230, 222, 222);
