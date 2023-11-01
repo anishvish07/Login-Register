@@ -57,7 +57,7 @@ const Register = (props) => {
             <input type='reset' className='text-danger btn-lg btn-sm btn-dark fs-6'/>    
             <h5 style={{
               color : "red"
-            }}>{<div>{props.message}</div>} </h5>
+            }}>{<div style={{fontFamily : 'cursive'}}>{props.message}</div>} </h5>
 
             </form>
                 
