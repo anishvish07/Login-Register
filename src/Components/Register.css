@@ -73,7 +73,7 @@
 .form-group input[type="text"]:invalid,
 .form-group input[type="email"]:invalid,
 .form-group input[type="password"]:invalid {
-    color: rgb(16, 162, 167);
+    color: rgb(236, 217, 225);
 }
 
 .button {
