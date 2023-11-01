@@ -33,7 +33,7 @@ const Register = (props) => {
             <div className='row'>
             <div className='form-group col' style={{borderRadius : '15px 50px'}}>
             <label className='text-primary text-light font-weight-bold fs-5 fw-bolder' htmlFor='firstNameInput' > First Name:- &emsp;</label>
-            <input className='form-control' type='text' name='firstName' id='firstNameInput'  required/> 
+            <input className='form-control' type='text' name='firstName' id='firstNameInput' placeholder='First Name' required/> 
             </div>
             <div className='form-group col'>
             <label className='last text-info font-weight-bold fs-5 fw-bolder' htmlFor='lastNameInput'> Last Name:- &emsp;</label>
