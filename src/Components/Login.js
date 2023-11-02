@@ -51,7 +51,7 @@ const Login = (props) => {
             </div>
             
             </div>
-            <h1 className='text-center  fs-3 foots'>New User - <Link className=' btn btn-secondary fs-5 glow' to ='/Register'>Register</Link> </h1>
+            <h1 className='text-center  fs-3 foots'><Link className=' btn btn-secondary fs-5 glow' to ='/Register'>New User - Register</Link> </h1>
             
         </div>
     );
